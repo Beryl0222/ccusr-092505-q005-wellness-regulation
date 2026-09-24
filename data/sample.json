@@ -1,0 +1,9 @@
+{
+  "event_id": "092505-005-sample-001",
+  "event_type": "LICENSE_VERIFIED",
+  "aggregate_type": "provider_license",
+  "aggregate_id": "wellness_regulation-001",
+  "occurred_at": "2026-09-24T12:00:00+08:00",
+  "version": 1,
+  "summary": "已登记一条可供联调的领域事实"
+}

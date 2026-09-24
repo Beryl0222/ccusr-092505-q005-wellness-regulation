@@ -1,0 +1,5 @@
+[project]
+name = "wellness-regulation"
+version = "0.1.0"
+description = "疗愈服务合规巡检库领域契约"
+requires-python = ">=3.11"

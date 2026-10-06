@@ -19,20 +19,46 @@
     "event_type": {
       "type": "string",
       "enum": [
+        "ENTITY_REGISTERED",
+        "LICENSE_REGISTERED",
         "LICENSE_VERIFIED",
+        "LICENSE_EXPIRED",
+        "OFFER_PUBLISHED",
         "OFFER_CAPTURED",
+        "PRACTITIONER_REGISTERED",
+        "PUBLICITY_VERSIONED",
+        "BOUNDARY_DETERMINED",
+        "EVIDENCE_CAPTURED",
+        "EVIDENCE_SEALED",
+        "COMPLAINT_FILED",
         "CASE_ASSIGNED",
+        "CASE_COORDINATED",
+        "CASE_NOTIFIED",
+        "INSPECTION_SCHEDULED",
+        "INSPECTION_RECORDED",
         "REMEDIATION_ORDERED",
-        "REVIEW_CLOSED"
+        "REMEDIATION_EXTENDED",
+        "REVIEW_CLOSED",
+        "RESTRICTION_IMPOSED",
+        "SERVICE_RESTARTED",
+        "PENALTY_ISSUED",
+        "APPEAL_REVOKED"
       ]
     },
     "aggregate_type": {
       "type": "string",
       "enum": [
+        "business_entity",
         "provider_license",
         "service_offer",
+        "practitioner",
+        "publicity_version",
+        "evidence",
+        "complaint",
         "inspection_case",
-        "remediation_plan"
+        "inspection_task",
+        "remediation_plan",
+        "penalty"
       ]
     },
     "aggregate_id": {

@@ -1,0 +1,392 @@
+[
+  {
+    "event_id": "demo-0000",
+    "event_type": "SERVICE_CATEGORY_DEFINED",
+    "aggregate_type": "service_category",
+    "aggregate_id": "sound",
+    "occurred_at": "2026-09-14T09:00:00+08:00",
+    "version": 1,
+    "summary": "定义服务类别 音声放松",
+    "code": "sound",
+    "name": "音声放松",
+    "kind": "general_experience",
+    "description": "音声聆听等一般体验，不含诊疗"
+  },
+  {
+    "event_id": "demo-0001",
+    "event_type": "NEGATIVE_LIST_UPDATED",
+    "aggregate_type": "service_category",
+    "aggregate_id": "sound",
+    "occurred_at": "2026-09-14T09:00:00+08:00",
+    "version": 2,
+    "summary": "更新 sound 负面清单（v2）",
+    "prohibited_terms": [
+      "包治失眠",
+      "无效退款保证"
+    ],
+    "prohibited_practices": [
+      "诱导大额预付"
+    ],
+    "basis": "疗愈服务负面清单2026版"
+  },
+  {
+    "event_id": "demo-0002",
+    "event_type": "PROVIDER_REGISTERED",
+    "aggregate_type": "provider",
+    "aggregate_id": "demo-provider-01",
+    "occurred_at": "2026-09-14T09:00:00+08:00",
+    "version": 1,
+    "summary": "登记经营主体 静心文化传播有限公司",
+    "name": "静心文化传播有限公司",
+    "home_region": "杭州"
+  },
+  {
+    "event_id": "demo-0003",
+    "event_type": "LICENSE_VERIFIED",
+    "aggregate_type": "provider",
+    "aggregate_id": "demo-provider-01",
+    "occurred_at": "2026-09-14T10:00:00+08:00",
+    "version": 2,
+    "summary": "核验资质 杭卫证字-2026-0731（有效期至 2026-11-30T23:59:59+08:00）",
+    "license_id": "杭卫证字-2026-0731",
+    "scope": "一般体验服务",
+    "valid_from": "2026-01-01T00:00:00+08:00",
+    "valid_until": "2026-11-30T23:59:59+08:00",
+    "basis": "证照核验单及政务网比对结果"
+  },
+  {
+    "event_id": "demo-0004",
+    "event_type": "OFFER_REGISTERED",
+    "aggregate_type": "service_offer",
+    "aggregate_id": "demo-offer-01",
+    "occurred_at": "2026-09-14T10:00:00+08:00",
+    "version": 1,
+    "summary": "登记服务项目 深度睡眠音声训练营",
+    "provider_id": "demo-provider-01",
+    "category_code": "sound",
+    "title": "深度睡眠音声训练营"
+  },
+  {
+    "event_id": "demo-0005",
+    "event_type": "PRACTITIONER_REGISTERED",
+    "aggregate_type": "practitioner",
+    "aggregate_id": "demo-prac-01",
+    "occurred_at": "2026-09-14T10:00:00+08:00",
+    "version": 1,
+    "summary": "登记从业人员 王聆",
+    "name": "王聆",
+    "provider_id": "demo-provider-01",
+    "credential_scope": "音声引导",
+    "credential_valid_until": "2027-06-30T23:59:59+08:00"
+  },
+  {
+    "event_id": "demo-0007",
+    "event_type": "EVIDENCE_SEALED",
+    "aggregate_type": "evidence_record",
+    "aggregate_id": "intake-demo-0006",
+    "occurred_at": "2026-09-14T12:00:00+08:00",
+    "version": 1,
+    "summary": "首次封存证据，受理号 intake-demo-0006",
+    "intake_no": "intake-demo-0006",
+    "fingerprint": "fp-20260914-page-a",
+    "kind": "webpage",
+    "source_ref": "https://shop.example/wellness/sleep-camp",
+    "captured_at": "2026-09-14T11:05:00+08:00",
+    "status": "new",
+    "revision_no": 1,
+    "linked_cases": []
+  },
+  {
+    "event_id": "demo-0008",
+    "event_type": "OFFER_CAPTURED",
+    "aggregate_type": "service_offer",
+    "aggregate_id": "demo-offer-01",
+    "occurred_at": "2026-09-14T12:00:00+08:00",
+    "version": 2,
+    "summary": "宣传文案形成新版本 v1",
+    "text": "舒缓聆听，帮助放松身心",
+    "fingerprint": "fp-20260914-page-a",
+    "city": "杭州",
+    "evidence_id": "intake-demo-0006",
+    "promotion_version": 1
+  },
+  {
+    "event_id": "demo-0009",
+    "event_type": "EVIDENCE_SEALED",
+    "aggregate_type": "evidence_record",
+    "aggregate_id": "intake-demo-0006",
+    "occurred_at": "2026-09-15T12:00:00+08:00",
+    "version": 2,
+    "summary": "内容变更封存证据，受理号 intake-demo-0006",
+    "intake_no": "intake-demo-0006",
+    "fingerprint": "fp-20260915-page-b",
+    "kind": "webpage",
+    "source_ref": "https://shop.example/wellness/sleep-camp",
+    "captured_at": "2026-09-15T10:00:00+08:00",
+    "status": "revised",
+    "revision_no": 2,
+    "linked_cases": []
+  },
+  {
+    "event_id": "demo-0010",
+    "event_type": "OFFER_CAPTURED",
+    "aggregate_type": "service_offer",
+    "aggregate_id": "demo-offer-01",
+    "occurred_at": "2026-09-15T12:00:00+08:00",
+    "version": 3,
+    "summary": "宣传文案形成新版本 v2",
+    "text": "本训练营可治疗失眠，包治失眠，无效退款保证",
+    "fingerprint": "fp-20260915-page-b",
+    "city": "上海",
+    "evidence_id": "intake-demo-0006",
+    "promotion_version": 2
+  },
+  {
+    "event_id": "demo-0011",
+    "event_type": "PRICING_TERMS_PUBLISHED",
+    "aggregate_type": "service_offer",
+    "aggregate_id": "demo-offer-01",
+    "occurred_at": "2026-09-15T12:00:00+08:00",
+    "version": 4,
+    "summary": "价格与退款条款形成新版本 v1",
+    "terms": {
+      "currency": "CNY",
+      "items": [
+        {
+          "component": "package",
+          "name": "训练营主套餐",
+          "price": 2980,
+          "refundable": true,
+          "refund_window_days": 7
+        },
+        {
+          "component": "addon",
+          "name": "一对一深度加时包",
+          "price": 1200,
+          "refundable": false,
+          "refund_window_days": 3
+        }
+      ]
+    },
+    "fingerprint": "fp-20260915-price-1",
+    "evidence_id": "intake-demo-0006",
+    "pricing_version": 1
+  },
+  {
+    "event_id": "demo-0012",
+    "event_type": "PROVIDER_ORDER_BLOCKED",
+    "aggregate_type": "provider",
+    "aggregate_id": "demo-provider-01",
+    "occurred_at": "2026-09-15T12:00:00+08:00",
+    "version": 3,
+    "summary": "限制新订单：一般体验项目越界宣称医疗诊疗、触碰负面清单禁项：包治失眠、无效退款保证",
+    "reasons": [
+      "一般体验项目越界宣称医疗诊疗",
+      "触碰负面清单禁项：包治失眠、无效退款保证"
+    ],
+    "basis": "宣传巡检触碰医疗边界或负面清单禁项"
+  },
+  {
+    "event_id": "demo-0013",
+    "event_type": "SERVICE_RENDERED",
+    "aggregate_type": "service_occurrence",
+    "aggregate_id": "demo-occ-01",
+    "occurred_at": "2026-09-15T12:00:00+08:00",
+    "version": 1,
+    "summary": "封存服务事实（订单 ORD-20260912-8821）",
+    "occurrence_id": "demo-occ-01",
+    "provider_id": "demo-provider-01",
+    "offer_id": "demo-offer-01",
+    "practitioner_id": "demo-prac-01",
+    "consumer_ref": "consumer-张某某",
+    "service_region": "上海",
+    "order_ref": "ORD-20260912-8821",
+    "component": "addon",
+    "rendered_at": "2026-09-12T19:30:00+08:00",
+    "basis": "订单与服务凭证"
+  },
+  {
+    "event_id": "demo-0014",
+    "event_type": "CONSUMER_AUTHORIZATION_GRANTED",
+    "aggregate_type": "consumer_authorization",
+    "aggregate_id": "demo-auth-01",
+    "occurred_at": "2026-09-15T12:00:00+08:00",
+    "version": 1,
+    "summary": "消费者 consumer-张某某 授权使用个人信息（投诉调查与个人信息核实）",
+    "consumer_ref": "consumer-张某某",
+    "scope": "投诉调查与个人信息核实",
+    "valid_until": "2027-09-14T23:59:59+08:00"
+  },
+  {
+    "event_id": "demo-0015",
+    "event_type": "COMPLAINT_FILED",
+    "aggregate_type": "inspection_case",
+    "aggregate_id": "demo-case-01",
+    "occurred_at": "2026-09-15T13:00:00+08:00",
+    "version": 1,
+    "summary": "受理投诉（受理号 intake-demo-0006，发生地 上海）",
+    "intake_no": "intake-demo-0006",
+    "provider_id": "demo-provider-01",
+    "occurrence_region": "上海",
+    "offer_id": "demo-offer-01",
+    "promotion_version": 2,
+    "complaint_summary": "消费者反映上海页面宣称治疗、加时包不予退款",
+    "consumer_ref": "consumer-张某某",
+    "authorization_id": "demo-auth-01"
+  },
+  {
+    "event_id": "demo-0016",
+    "event_type": "CASE_ASSIGNED",
+    "aggregate_type": "inspection_case",
+    "aggregate_id": "demo-case-01",
+    "occurred_at": "2026-09-15T13:00:00+08:00",
+    "version": 2,
+    "summary": "案件分派给 insp-sh-02（上海）",
+    "inspector_id": "insp-sh-02",
+    "lead_region": "上海",
+    "basis": "服务发生地管辖"
+  },
+  {
+    "event_id": "demo-0017",
+    "event_type": "CASE_JURISDICTION_LINKED",
+    "aggregate_type": "inspection_case",
+    "aggregate_id": "demo-case-01",
+    "occurred_at": "2026-09-15T13:00:00+08:00",
+    "version": 3,
+    "summary": "关联协同辖区 杭州（insp-hz-07）",
+    "region": "杭州",
+    "inspector_id": "insp-hz-07",
+    "basis": "经营主体属地协同调查"
+  },
+  {
+    "event_id": "demo-0018",
+    "event_type": "CASE_PERSONAL_INFO_ACCESSED",
+    "aggregate_type": "inspection_case",
+    "aggregate_id": "demo-case-01",
+    "occurred_at": "2026-09-15T13:00:00+08:00",
+    "version": 4,
+    "summary": "insp-sh-02 因 核实付款账户与服务记录 查阅个人信息",
+    "inspector_id": "insp-sh-02",
+    "purpose": "核实付款账户与服务记录",
+    "basis": "消费者授权+发生地管辖"
+  },
+  {
+    "event_id": "demo-0019",
+    "event_type": "REMEDIATION_ORDERED",
+    "aggregate_type": "remediation_plan",
+    "aggregate_id": "demo-plan-01",
+    "occurred_at": "2026-09-15T13:00:00+08:00",
+    "version": 1,
+    "summary": "责令整改，期限至 2026-09-25T23:59:59+08:00",
+    "case_id": "demo-case-01",
+    "provider_id": "demo-provider-01",
+    "actions": [
+      "删除治疗、包治等医疗与保证性表述",
+      "取消加时包概不退款条款"
+    ],
+    "deadline": "2026-09-25T23:59:59+08:00",
+    "basis": "《广告法》第十七条、消费者权益保护相关规定"
+  },
+  {
+    "event_id": "demo-0020",
+    "event_type": "CASE_REMEDIATION_STARTED",
+    "aggregate_type": "inspection_case",
+    "aggregate_id": "demo-case-01",
+    "occurred_at": "2026-09-15T13:00:00+08:00",
+    "version": 5,
+    "summary": "案件进入整改阶段",
+    "plan_id": "demo-plan-01",
+    "basis": "《广告法》第十七条、消费者权益保护相关规定"
+  },
+  {
+    "event_id": "demo-0021",
+    "event_type": "REMEDIATION_DEADLINE_EXTENDED",
+    "aggregate_type": "remediation_plan",
+    "aggregate_id": "demo-plan-01",
+    "occurred_at": "2026-09-18T13:00:00+08:00",
+    "version": 2,
+    "summary": "整改期限延长至 2026-09-30T23:59:59+08:00",
+    "previous_deadline": "2026-09-25T23:59:59+08:00",
+    "new_deadline": "2026-09-30T23:59:59+08:00",
+    "basis": "商家提交页面修改排期与部分截图，经主办审核同意延期5日"
+  },
+  {
+    "event_id": "demo-0022",
+    "event_type": "REVIEW_PASSED",
+    "aggregate_type": "remediation_plan",
+    "aggregate_id": "demo-plan-01",
+    "occurred_at": "2026-09-28T13:00:00+08:00",
+    "version": 3,
+    "summary": "复核通过",
+    "basis": "现场复核两地页面均已删除违禁表述，加时包支持7日无理由退款"
+  },
+  {
+    "event_id": "demo-0023",
+    "event_type": "PENALTY_ISSUED",
+    "aggregate_type": "penalty",
+    "aggregate_id": "demo-penalty-01",
+    "occurred_at": "2026-09-28T13:00:00+08:00",
+    "version": 1,
+    "summary": "作出处罚：责令停止发布违法宣传，罚款人民币20000元",
+    "case_id": "demo-case-01",
+    "provider_id": "demo-provider-01",
+    "promotion_ref": {
+      "offer_id": "demo-offer-01",
+      "promotion_version": 2,
+      "fingerprint": "fp-20260915-page-b",
+      "city": "上海",
+      "evidence_intake_no": "intake-demo-0006"
+    },
+    "occurrence_ref": {
+      "occurrence_id": "demo-occ-01",
+      "order_ref": "ORD-20260912-8821",
+      "component": "addon",
+      "service_region": "上海",
+      "practitioner_id": "demo-prac-01",
+      "rendered_at": "2026-09-12T19:30:00+08:00"
+    },
+    "license_snapshot": {
+      "license_id": "杭卫证字-2026-0731",
+      "scope": "一般体验服务",
+      "valid_from": "2026-01-01T00:00:00+08:00",
+      "valid_until": "2026-11-30T23:59:59+08:00",
+      "verification_basis": "证照核验单及政务网比对结果",
+      "effective_at": "2026-09-12T19:30:00+08:00"
+    },
+    "regulation_clause": "《广告法》第十七条",
+    "decision": "责令停止发布违法宣传，罚款人民币20000元",
+    "basis": "封存页面（受理号 intake-demo-0006）、订单凭证、询问笔录、资质核验单"
+  },
+  {
+    "event_id": "demo-0024",
+    "event_type": "CASE_PENALTY_ATTACHED",
+    "aggregate_type": "inspection_case",
+    "aggregate_id": "demo-case-01",
+    "occurred_at": "2026-09-28T13:00:00+08:00",
+    "version": 6,
+    "summary": "案件关联处罚 demo-penalty-01",
+    "penalty_id": "demo-penalty-01"
+  },
+  {
+    "event_id": "demo-0025",
+    "event_type": "REVIEW_CLOSED",
+    "aggregate_type": "remediation_plan",
+    "aggregate_id": "demo-plan-01",
+    "occurred_at": "2026-09-28T13:00:00+08:00",
+    "version": 4,
+    "summary": "整改复核通过并关闭",
+    "basis": "整改到位，违法表述已清除",
+    "conclusion": "整改完成"
+  },
+  {
+    "event_id": "demo-0026",
+    "event_type": "REVIEW_CLOSED",
+    "aggregate_type": "inspection_case",
+    "aggregate_id": "demo-case-01",
+    "occurred_at": "2026-09-28T13:00:00+08:00",
+    "version": 7,
+    "summary": "结案：复核通过，依法结案",
+    "conclusion": "复核通过，依法结案",
+    "basis": "整改到位，违法表述已清除"
+  }
+]

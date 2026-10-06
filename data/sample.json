@@ -1,9 +1,14 @@
 {
-  "event_id": "092505-005-sample-001",
-  "event_type": "LICENSE_VERIFIED",
-  "aggregate_type": "provider_license",
-  "aggregate_id": "wellness_regulation-001",
-  "occurred_at": "2026-09-24T12:00:00+08:00",
-  "version": 1,
-  "summary": "已登记一条可供联调的领域事实"
+  "event_id": "demo-0012",
+  "event_type": "PROVIDER_ORDER_BLOCKED",
+  "aggregate_type": "provider",
+  "aggregate_id": "demo-provider-01",
+  "occurred_at": "2026-09-15T12:00:00+08:00",
+  "version": 3,
+  "summary": "限制新订单：一般体验项目越界宣称医疗诊疗、触碰负面清单禁项：包治失眠、无效退款保证",
+  "reasons": [
+    "一般体验项目越界宣称医疗诊疗",
+    "触碰负面清单禁项：包治失眠、无效退款保证"
+  ],
+  "basis": "宣传巡检触碰医疗边界或负面清单禁项"
 }

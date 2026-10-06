@@ -19,20 +19,52 @@
     "event_type": {
       "type": "string",
       "enum": [
+        "PROVIDER_REGISTERED",
         "LICENSE_VERIFIED",
+        "LICENSE_RENEWED",
+        "PROVIDER_ORDER_BLOCKED",
+        "PROVIDER_ORDER_RESTORED",
+        "SERVICE_CATEGORY_DEFINED",
+        "NEGATIVE_LIST_UPDATED",
+        "OFFER_REGISTERED",
         "OFFER_CAPTURED",
+        "PRICING_TERMS_PUBLISHED",
+        "PRACTITIONER_REGISTERED",
+        "SERVICE_RENDERED",
+        "CONSUMER_AUTHORIZATION_GRANTED",
+        "CONSUMER_AUTHORIZATION_REVOKED",
+        "EVIDENCE_SEALED",
+        "COMPLAINT_FILED",
         "CASE_ASSIGNED",
+        "CASE_REMEDIATION_STARTED",
+        "CASE_JURISDICTION_LINKED",
+        "CASE_NOTIFIED_OF_VERSION",
+        "CASE_PERSONAL_INFO_ACCESSED",
         "REMEDIATION_ORDERED",
+        "REMEDIATION_DEADLINE_EXTENDED",
+        "REVIEW_PASSED",
+        "REVIEW_FAILED",
+        "CASE_APPEALED",
+        "CASE_WITHDRAWN",
+        "CASE_PENALTY_ATTACHED",
+        "PENALTY_ISSUED",
         "REVIEW_CLOSED"
       ]
     },
     "aggregate_type": {
       "type": "string",
       "enum": [
+        "provider",
         "provider_license",
+        "service_category",
         "service_offer",
+        "practitioner",
+        "service_occurrence",
+        "consumer_authorization",
+        "evidence_record",
         "inspection_case",
-        "remediation_plan"
+        "remediation_plan",
+        "penalty"
       ]
     },
     "aggregate_id": {
